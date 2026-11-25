@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "business_name": {
+      "type": "string",
+      "description": "Nome do negócio"
+    },
+    "segment": {
+      "type": "string",
+      "description": "Área de atuação"
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Produtos ou serviços"
+    },
+    "target_audience": {
+      "type": "string",
+      "description": "Perfil dos clientes"
+    },
+    "marketing_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Objetivos de marketing"
+    },
+    "monthly_budget": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Orçamento mensal em reais"
+    }
+  },
+  "required": [
+    "business_name",
+    "segment",
+    "products",
+    "target_audience",
+    "marketing_goals"
+  ],
+  "additionalProperties": false
+}
